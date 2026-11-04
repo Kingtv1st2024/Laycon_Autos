@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Leycon Autos — Quality Cars. Reliable Services. Ibadan</title>
+<link rel="icon" href="logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0d1b3d;--navy2:#142750;--red:#e63946;--bg:#f5f6fa;--ink:#1b2236;--mut:#667;--card:#fff}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font-family:Inter,sans-serif;color:var(--ink);background:var(--bg)}
+h1,h2,h3,.logo b{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:.5px}
+a{color:inherit;text-decoration:none}.wrap{max-width:1150px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:20;background:var(--navy);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px}.logo img{height:48px}.logo b{font-size:20px}
+nav a{margin-left:22px;font-size:14px;opacity:.85}nav a:hover{opacity:1;color:var(--red)}
+.btn{display:inline-block;background:var(--red);color:#fff;padding:12px 26px;border-radius:8px;font-weight:600;border:0;cursor:pointer;font-size:15px}
+.btn.o{background:transparent;border:2px solid #fff}.btn:hover{filter:brightness(1.1)}
+.hero{background:linear-gradient(120deg,rgba(13,27,61,.96),rgba(13,27,61,.8)),url(https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600&q=70) center/cover;color:#fff;padding:90px 0 70px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.hero h1{font-size:56px;line-height:1.05}.hero h1 span{color:var(--red)}.hero p{margin:18px 0 28px;opacity:.85;max-width:480px;line-height:1.6}
+.hero img{width:100%;max-width:340px;justify-self:center;border-radius:20px;box-shadow:0 20px 60px #0008}
+.stats{display:flex;gap:40px;margin-top:36px}.stats b{font:700 34px Oswald}.stats small{display:block;opacity:.7}
+.ticker{background:var(--red);color:#fff;padding:12px 0;overflow:hidden;white-space:nowrap;font:500 14px Oswald;letter-spacing:2px;text-transform:uppercase}
+.ticker div{display:inline-block;animation:mv 25s linear infinite}@keyframes mv{to{transform:translateX(-50%)}}
+section{padding:70px 0}h2{font-size:38px;margin-bottom:8px}h2 span{color:var(--red)}.sub{color:var(--mut);margin-bottom:30px}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.filters button,.filters input{padding:10px 18px;border-radius:30px;border:1px solid #ccd;background:#fff;font:500 14px Inter;cursor:pointer}
+.filters button.on{background:var(--navy);color:#fff;border-color:var(--navy)}.filters input{cursor:text;margin-left:auto;min-width:200px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
+.car{background:var(--card);border-radius:14px;overflow:hidden;box-shadow:0 4px 18px #0001;transition:.2s;cursor:pointer}.car:hover{transform:translateY(-4px);box-shadow:0 10px 30px #0002}
+.ph{height:200px;background:var(--navy) center/cover;position:relative;display:flex;align-items:center;justify-content:center}.ph.none img{height:90px;opacity:.5}
+.tag{position:absolute;top:12px;left:12px;background:var(--red);color:#fff;font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px}.tag.s{background:#222}.tag.f{left:auto;right:12px;background:#f4b400;color:#111}
+.cb{padding:18px}.cb small{color:var(--mut)}.cb h3{font-size:22px;margin:2px 0 8px}.price{font:700 22px Oswald;color:var(--red)}
+.spec{display:flex;gap:8px;margin:12px 0;flex-wrap:wrap}.spec span{background:var(--bg);padding:4px 10px;border-radius:6px;font-size:12px}
+.cb .btn{width:100%;text-align:center;padding:10px}
+.empty{grid-column:1/-1;text-align:center;color:var(--mut);padding:40px}
+.dark{background:var(--navy);color:#fff}.dark .sub{color:#aab}
+.sv{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.sv div{background:var(--navy2);padding:26px;border-radius:14px;border-top:3px solid var(--red)}.sv i{font-size:30px;font-style:normal}.sv h3{margin:10px 0 6px;font-size:20px}.sv p{opacity:.75;font-size:14px;line-height:1.5}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+form{background:#fff;padding:28px;border-radius:14px;box-shadow:0 4px 18px #0001;display:grid;gap:14px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #ccd;border-radius:8px;font:15px Inter}
+.ct p{margin:14px 0}.ct a{color:var(--red);font-weight:600}
+footer{background:#08122b;color:#aab;text-align:center;padding:30px;font-size:14px}
+.wa{position:fixed;right:20px;bottom:20px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 6px 20px #0004;z-index:30}
+.modal{position:fixed;inset:0;background:#000c;display:none;align-items:center;justify-content:center;z-index:40;padding:16px}.modal.on{display:flex}
+.mb{background:#fff;border-radius:14px;max-width:780px;width:100%;max-height:92vh;overflow:auto}.mb .big{height:380px;background:var(--navy) center/cover}
+.th{display:flex;gap:6px;padding:10px;overflow:auto}.th img{height:56px;border-radius:6px;cursor:pointer}.mb .in{padding:20px}
+.toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#111;color:#fff;padding:12px 22px;border-radius:30px;display:none;z-index:50}
+@media(max-width:800px){nav a{display:none}.hero .wrap,.two{grid-template-columns:1fr}.hero h1{font-size:40px}.hero img{max-width:220px;order:-1}.mb .big{height:240px}.filters input{margin:0;width:100%}}
+.src{background:#fff;border-bottom:1px solid #e3e6ee}.src .wrap{display:flex;justify-content:space-around;flex-wrap:wrap;gap:10px;padding:16px 20px;font:600 15px Inter}
+.sc{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}.sc>div{background:var(--navy2);border-radius:14px;padding:26px;border-top:3px solid #fff;position:relative}.sc>div.r{border-color:var(--red)}.sc .n{font:700 44px Oswald;opacity:.25;position:absolute;right:20px;top:14px}.sc img{width:120px;height:120px;object-fit:cover;border-radius:50%;border:3px solid var(--red)}.sc h3{margin:14px 0 8px;font-size:22px}.sc p{opacity:.8;line-height:1.6;font-size:14px}
+</style></head><body>
+<header><div class="wrap nav"><a class="logo" href="#"><img src="logo.png" alt="Leycon Autos"><b>Leycon Autos</b></a>
+<nav><a href="#inventory">Inventory</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<a class="btn" href="#contact">Enquire</a></div></header>
+
+<div class="hero"><div class="wrap"><div>
+<h1>Drive Your <span>Dream.</span> We Deliver.</h1>
+<p>Quality cars. Reliable services. Total peace of mind. Brand new and fairly used cars from the USA, Canada, Japan and Germany — inspected, verified and delivered to your destination.</p>
+<a class="btn" href="#inventory">Browse Inventory</a> <a class="btn o" href="#contact">Request a Car</a>
+<div class="stats"><div><b>4</b><small>Countries Sourced</small></div><div><b>3</b><small>Core Services</small></div><div><b>100%</b><small>Inspected &amp; Verified</small></div></div></div>
+<img src="logo.png" alt="Leycon Autos logo"></div></div>
+<div class="ticker"><div id="tk"></div></div>
+<div class="src"><div class="wrap"><span>🇺🇸 USA Cars</span><span>🇨🇦 Canada Cars</span><span>🇯🇵 Japan Cars</span><span>🇩🇪 German Cars</span></div></div>
+
+<section id="inventory"><div class="wrap"><h2>Available <span>Inventory</span></h2><p class="sub">Fresh arrivals, updated by our team.</p>
+<div class="filters" id="fl"><button class="on" data-f="all">All</button><button data-f="Available">Available</button><button data-f="featured">Featured</button><button data-f="Sold">Sold</button><input id="q" placeholder="Search make or model…"></div>
+<div class="grid" id="cars"><div class="empty">Loading cars…</div></div></div></section>
+
+<section id="services" class="dark"><div class="wrap"><h2>Our <span>Services</span></h2><p class="sub">Your trusted partner in automotive excellence.</p>
+<div class="sc">
+<div><span class="n">01</span><img src="svc1.jpg" alt=""><h3>Car Dealership</h3><p>We deal in brand new and fairly used cars. All our vehicles are carefully inspected and verified for your satisfaction and peace of mind.</p></div>
+<div class="r"><span class="n">02</span><img src="svc2.jpg" alt=""><h3>Automotive Service</h3><p>Professional maintenance, diagnostics and repairs to keep your vehicle in top condition.</p></div>
+<div><span class="n">03</span><img src="svc3.jpg" alt=""><h3>Transportation Service</h3><p>Safe, reliable and timely transportation of vehicles to your preferred destination.</p></div>
+</div></div></section>
+
+<section id="about"><div class="wrap two"><div><h2>Why <span>Leycon Autos</span></h2>
+<p style="line-height:1.8;color:#445;margin-top:14px">Leycon Autos, part of Leycon Automobile (RC:8015715) in Ibadan, connects serious buyers with verified vehicles from the USA, Canada, Japan and Germany. Every car is checked from engine to exterior before it reaches you, so you buy with confidence.</p>
+<p style="line-height:1.8;color:#445;margin-top:14px">Whether you want a daily runner or a luxury statement, we guide you from budget to keys in hand.</p></div>
+<div class="sv" style="grid-template-columns:1fr 1fr"><div style="background:var(--navy);color:#fff"><b style="font:700 30px Oswald">Verified</b><p>Every car vetted</p></div><div style="background:var(--navy);color:#fff"><b style="font:700 30px Oswald">Fair</b><p>Transparent pricing</p></div><div style="background:var(--navy);color:#fff"><b style="font:700 30px Oswald">Fast</b><p>Quick response</p></div><div style="background:var(--navy);color:#fff"><b style="font:700 30px Oswald">Safe</b><p>Secure delivery</p></div></div></div></section>
+
+<section id="contact" style="padding-top:0"><div class="wrap two"><div class="ct"><h2>Let's Find <span>Your Car</span></h2>
+<p class="sub">One message away. Fill the form or reach us directly.</p>
+<p>💬 WhatsApp: <a id="wal" href="#">0816 673 0041</a></p><p>📞 Hotline: <a href="tel:+2348166730041">0816 673 0041</a></p><p>📍 Islamic Complex, Bashorun, Ibadan</p><p>🎵 TikTok: leycon autos Ibadan</p><p>📸 Instagram: leycon autos Ibadan</p></div>
+<form id="ef"><input name="name" placeholder="Full name" required><input name="phone" placeholder="Phone / WhatsApp" required>
+<select name="interest"><option>Car Purchase</option><option>Car Sourcing</option><option>Automotive Service</option><option>Transportation</option><option>Inspection</option></select>
+<select name="budget"><option value="">Budget range</option><option>₦5M – ₦15M</option><option>₦15M – ₦30M</option><option>₦30M – ₦60M</option><option>₦60M+</option></select>
+<textarea name="message" rows="4" placeholder="Tell us what you're looking for"></textarea><button class="btn">Send Enquiry</button></form></div></section>
+
+<footer>© <span id="yr"></span> Leycon Autos · Leycon Automobile · RC:8015715. All rights reserved.<br>Driving Value. Delivering Trust. · <a href="admin.html">Admin</a></footer>
+<a class="wa" id="waf" href="#" target="_blank">💬</a>
+<div class="modal" id="md"><div class="mb" id="mb"></div></div><div class="toast" id="ts"></div>
+<script>
+const WA='2348166730041';
+const $=s=>document.querySelector(s),naira=n=>'₦'+Number(n).toLocaleString('en-NG');
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let cars=[],f='all';
+$('#yr').textContent=new Date().getFullYear();
+$('#wal').href=$('#waf').href='https://wa.me/'+WA;
+$('#tk').innerHTML=('Car Dealership ◆ Automotive Service ◆ Transportation ◆ USA ◆ Canada ◆ Japan ◆ German Cars ◆ ').repeat(8);
+const wa=c=>'https://wa.me/'+WA+'?text='+encodeURIComponent(`Hello Leycon Autos, I'm interested in the ${c.year||''} ${c.make} ${c.model}.`);
+function render(){
+  const q=$('#q').value.toLowerCase();
+  const l=cars.filter(c=>(f==='all'||(f==='featured'?c.featured:c.status===f))&&(c.make+' '+c.model).toLowerCase().includes(q));
+  $('#cars').innerHTML=l.length?l.map(c=>`<div class="car" data-id="${c.id}"><div class="ph ${c.images[0]?'':'none'}" style="${c.images[0]?`background-image:url('${esc(c.images[0])}')`:''}">${c.images[0]?'':'<img src="logo.png">'}<span class="tag ${c.status==='Sold'?'s':''}">${c.status}</span>${c.featured?'<span class="tag f">★ Featured</span>':''}</div>
+  <div class="cb"><small>${esc(c.make)}</small><h3>${esc(c.model)}</h3><div class="price">${naira(c.price)}</div><div class="spec">${[c.year,c.type,c.body].filter(Boolean).map(x=>`<span>${esc(x)}</span>`).join('')}</div>
+  <a class="btn" href="${wa(c)}" target="_blank" onclick="event.stopPropagation()">${c.status==='Sold'?'Find Similar':'Enquire on WhatsApp'}</a></div></div>`).join(''):'<div class="empty">No cars match yet. Check back soon or request a car below.</div>';
+}
+fetch('/api/cars').then(r=>r.json()).then(d=>{cars=d;render()}).catch(()=>$('#cars').innerHTML='<div class="empty">Could not load cars.</div>');
+$('#fl').onclick=e=>{if(e.target.dataset.f){f=e.target.dataset.f;document.querySelectorAll('#fl button').forEach(b=>b.classList.toggle('on',b===e.target));render()}};
+$('#q').oninput=render;
+$('#cars').onclick=e=>{const el=e.target.closest('.car');if(!el)return;const c=cars.find(x=>x.id===el.dataset.id);
+  $('#mb').innerHTML=`<div class="big" id="big" style="${c.images[0]?`background-image:url('${esc(c.images[0])}')`:''}"></div><div class="th">${c.images.map(i=>`<img src="${esc(i)}" onclick="big.style.backgroundImage='url(${esc(i)})'">`).join('')}</div>
+  <div class="in"><small>${esc(c.make)}</small><h3 style="font-size:28px">${esc(c.model)}</h3><div class="price">${naira(c.price)}</div><p style="margin:12px 0;color:#445">${esc(c.description)}</p><a class="btn" href="${wa(c)}" target="_blank">Enquire on WhatsApp</a></div>`;$('#md').classList.add('on')};
+$('#md').onclick=e=>{if(e.target.id==='md')$('#md').classList.remove('on')};
+$('#ef').onsubmit=async e=>{e.preventDefault();const b=Object.fromEntries(new FormData(e.target));
+  const r=await fetch('/api/enquiries',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b)});
+  const t=$('#ts');t.textContent=r.ok?'Thanks! We will contact you shortly.':'Something went wrong. Try again.';t.style.display='block';setTimeout(()=>t.style.display='none',3500);if(r.ok)e.target.reset()};
+</script></body></html>

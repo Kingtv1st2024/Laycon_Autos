@@ -1,0 +1,57 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "make": "Toyota",
+      "model": "Camry (Sample)",
+      "price": 9500000,
+      "year": 2014,
+      "type": "USA Used",
+      "body": "Sedan",
+      "description": "Sample listing — add your real cars from the admin page.",
+      "status": "Available",
+      "featured": true,
+      "images": []
+    },
+    {
+      "id": "2",
+      "make": "Lexus",
+      "model": "RX350 (Sample)",
+      "price": 21000000,
+      "year": 2016,
+      "type": "Canada Used",
+      "body": "SUV",
+      "description": "Sample listing — add your real cars from the admin page.",
+      "status": "Available",
+      "featured": false,
+      "images": []
+    },
+    {
+      "id": "3",
+      "make": "Honda",
+      "model": "Accord (Sample)",
+      "price": 7800000,
+      "year": 2012,
+      "type": "Japan Used",
+      "body": "Sedan",
+      "description": "Sample listing — add your real cars from the admin page.",
+      "status": "Sold",
+      "featured": false,
+      "images": []
+    },
+    {
+      "id": "4",
+      "make": "Mercedes-Benz",
+      "model": "C300 (Sample)",
+      "price": 18500000,
+      "year": 2015,
+      "type": "German Used",
+      "body": "Sedan",
+      "description": "Sample listing — add your real cars from the admin page.",
+      "status": "Available",
+      "featured": true,
+      "images": []
+    }
+  ],
+  "enquiries": []
+}
